@@ -218,12 +218,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5659650519196128738, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5659650519196128738, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5659650519196128738, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.7554
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 5659650519196128738, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2571
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5659650519196128738, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -259,6 +267,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7694230973915337531, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694230973915337531, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
