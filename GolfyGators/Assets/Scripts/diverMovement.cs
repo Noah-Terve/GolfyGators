@@ -7,19 +7,16 @@ public class diverMovement : MonoBehaviour
     public Rigidbody2D rb;
     public float speed = 5f;
     public Vector2 movement;
-    
-    // TODO: Uncomment the bellow once we have a game handler object
-    // public GameHandler handler;
+    public GameController handler;
     
     // Start is called before the first frame update
     void Start() {
         // grab the rigidbody from the player object
         rb = GetComponent<Rigidbody2D> ();
         
-        // TODO: Uncomment the bellow once we have a game handler object
-        // if (GameObject.FindWithTag("GameHandler") != null){
-        //     GameHandlerObj = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
-        // }
+        if (GameObject.FindWithTag("GameController") != null){
+            handler = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        }
     }
 
     // FixedUpdate is called once per frame before the frame starts
@@ -34,11 +31,9 @@ public class diverMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) {
         // if the player hits a ball
         if (other.gameObject.tag == "golfBall") {
-            // get rid of the golf ball
+            // get rid of the golf ball and update the score
             Destroy(other.gameObject);
-            // TODO: Uncomment the bellow once we have a game handler object
-            //       Make sure it has an addScore component. <<<<
-            // handler.addScore(1);
+            handler.addScore(1);
         }
         
         // if the player hits a gator
@@ -46,9 +41,7 @@ public class diverMovement : MonoBehaviour
             // get rid of the gator? Can remove this later so the gator doesn't
             // die, or we can think of something else
             Destroy(other.gameObject);
-            // TODO: Uncomment the bellow once we have a game handler object
-            //       Make sure it has a loseScore component. <<<<
-            // handler.loseScore();
+            handler.loseScore();
         }
         
     }
