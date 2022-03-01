@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour
     void updateScore() {
         Text scoreTextB = scoreText.GetComponent<Text>();
         scoreTextB.text = "" + score;
-        if (score > 5) {
+        if (score > 10) {
             SceneManager.LoadScene("gameOver", LoadSceneMode.Single);
         }
     }
