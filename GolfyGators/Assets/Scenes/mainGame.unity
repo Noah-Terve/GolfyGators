@@ -155,6 +155,7 @@ MonoBehaviour:
   gatorPrefab: {fileID: 3490358470225213217, guid: cfc349d5db0107342856627aa0be0fd9, type: 3}
   spawnRangeStart: 0.5
   spawnRangeEnd: 2.5
+  bottomTime: 5
 --- !u!4 &138510702
 Transform:
   m_ObjectHideFlags: 0
@@ -498,8 +499,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 348, y: 209}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 399.95728, y: 245.24925}
+  m_SizeDelta: {x: 263.9146, y: 102.4985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1122494064
 MonoBehaviour:
@@ -534,7 +535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0
+  m_Text: 'hello!
 
 '
 --- !u!222 &1122494065

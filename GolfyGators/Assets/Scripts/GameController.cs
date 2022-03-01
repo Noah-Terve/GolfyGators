@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -17,17 +18,21 @@ public class GameController : MonoBehaviour
     // add score
     public void addScore(int points) {
         score += points;
-        
+        updateScore();
     }
 
     // remove score
     public void loseScore() {
         score /= 2;
+        updateScore();
     }
     
     // update the score
     void updateScore() {
         Text scoreTextB = scoreText.GetComponent<Text>();
         scoreTextB.text = "" + score;
+        if (score > 5) {
+            SceneManager.LoadScene("gameOver", LoadSceneMode.Single);
+        }
     }
 }
