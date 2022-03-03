@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
 
     // remove score
     public void loseScore() {
-        score /= 2;
+        score--;
         updateScore();
     }
     

@@ -10,8 +10,8 @@ public class GatorSpawner : MonoBehaviour
     private float verMin;
     private int rangeEnd;
     private Transform spawnPoint;
-    public float spawnRangeStart = 1.0f;
-    public float spawnRangeEnd = 3.0f;
+    private float spawnRangeStart = 2.5f;
+    private float spawnRangeEnd = 5.0f;
     private float timeToSpawn;
     private float randomTimer = 0f;
     private float bottomTimer = 0f;
@@ -25,8 +25,9 @@ public class GatorSpawner : MonoBehaviour
 
       void FixedUpdate(){
             timeToSpawn = Random.Range(spawnRangeStart, spawnRangeEnd);
-            randomTimer += 0.01f;
-            bottomTimer += 0.01f;
+            // keeps timers synced with fixed update
+            randomTimer += 0.02f;
+            bottomTimer += 0.02f;
             //spawns the gator to clean the bottom every 5 seconds
             if (bottomTimer >= bottomTime) {
                 Debug.Log("Bottom gator made\n");

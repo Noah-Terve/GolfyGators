@@ -19,7 +19,7 @@ public class GatorMovement : MonoBehaviour
     void Update(){
         movement.x = -1;
         // moves gator left
-        rb.MovePosition(rb.position + movement * 2 * moveSpeed 
+        rb.MovePosition(rb.position + movement * moveSpeed
                                             * Time.fixedDeltaTime);
         //destroys gator after it goes offscreen
         if (transform.position.x < horMin) {
