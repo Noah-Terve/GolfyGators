@@ -15,6 +15,13 @@ public class GameController : MonoBehaviour
         updateScore();
     }
     
+    // Update to get called every frame
+    void Update() {
+        if (Input.GetKey("escape")){
+                Application.Quit();
+        }
+    }
+    
     // add score
     public void addScore(int points) {
         score += points;
@@ -23,7 +30,8 @@ public class GameController : MonoBehaviour
 
     // remove score
     public void loseScore() {
-        score--;
+        if (score > 0)
+            score--;
         updateScore();
     }
     

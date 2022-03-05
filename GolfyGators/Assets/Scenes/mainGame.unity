@@ -153,8 +153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gatorPrefab: {fileID: 3490358470225213217, guid: cfc349d5db0107342856627aa0be0fd9, type: 3}
-  spawnRangeStart: 0.5
-  spawnRangeEnd: 2.5
   bottomTime: 5
 --- !u!4 &138510702
 Transform:
@@ -499,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 399.95728, y: 245.24925}
+  m_AnchoredPosition: {x: -405, y: 213}
   m_SizeDelta: {x: 263.9146, y: 102.4985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1122494064
@@ -515,7 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1262,6 +1260,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 595626366453430257, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5659650519196128738, guid: 0ffb91c505fb840e7bbc82e67ebf32a3, type: 3}
       propertyPath: m_RootOrder
       value: 1

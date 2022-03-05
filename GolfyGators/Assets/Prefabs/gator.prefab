@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8455851399157224447}
-  - component: {fileID: 4215608086859450470}
   - component: {fileID: -2498891638015390949}
   - component: {fileID: 5812890863777209310}
+  - component: {fileID: 665739021219195330}
   m_Layer: 0
   m_Name: gator
   m_TagString: gator
@@ -34,32 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &4215608086859450470
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3490358470225213217}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4, y: 1}
-  m_EdgeRadius: 0
 --- !u!50 &-2498891638015390949
 Rigidbody2D:
   serializedVersion: 4
@@ -96,6 +70,55 @@ MonoBehaviour:
   rb: {fileID: 0}
   moveSpeed: 5
   movement: {x: 0, y: 0}
+--- !u!60 &665739021219195330
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3490358470225213217}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7983861, y: 0.07924768}
+      - {x: 0.45807934, y: 0.30973142}
+      - {x: -0.75071096, y: 0.36901557}
+      - {x: -0.9241247, y: 0.518449}
+      - {x: -1.3344874, y: 0.5306286}
+      - {x: -2.037053, y: 0.31822035}
+      - {x: -2.0351567, y: -0.36742723}
+      - {x: -1.6957855, y: -0.37747416}
+      - {x: -1.0148449, y: -0.17996323}
+      - {x: -0.836276, y: -0.48689944}
+      - {x: -0.5389304, y: -0.49229997}
+      - {x: -0.6993146, y: -0.21878639}
+      - {x: -0.4266386, y: -0.28874785}
+      - {x: 0.19221735, y: -0.3020291}
+      - {x: 0.27434635, y: -0.2012443}
+      - {x: 0.58778536, y: -0.48689932}
+      - {x: 0.86485577, y: -0.4914669}
+      - {x: 0.8630886, y: -0.36682215}
+      - {x: 0.6850543, y: -0.14707294}
+      - {x: 1.1178207, y: -0.14964631}
+      - {x: 1.3231864, y: -0.29502973}
+      - {x: 2.0124178, y: -0.29186994}
+      - {x: 2.0061893, y: -0.13355336}
+      - {x: 1.0707002, y: 0.088136464}
 --- !u!1 &7359595312848123491
 GameObject:
   m_ObjectHideFlags: 0
