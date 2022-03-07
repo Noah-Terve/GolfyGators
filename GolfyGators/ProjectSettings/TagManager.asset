@@ -6,6 +6,7 @@ TagManager:
   tags:
   - golfBall
   - gator
+  - gold
   layers:
   - Default
   - TransparentFX
