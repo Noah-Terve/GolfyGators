@@ -8,6 +8,8 @@ public class GatorMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Vector2 movement;
     private float horMin;
+    public AudioSource getBall;
+    
 
       // Auto-load the RigidBody component into the variable:
     void Start(){
@@ -31,6 +33,8 @@ public class GatorMovement : MonoBehaviour
         if (other.gameObject.tag == "golfBall") {
             // get rid of the golf ball
             Destroy(other.gameObject);
+            getBall.Stop();
+            getBall.Play();
         }
     }
 }
