@@ -44,6 +44,11 @@ public class diverMovement : MonoBehaviour
             handler.loseScore();
         }
         
+        if (other.gameObject.tag == "gold") {
+            // get rid of the golf ball and update the score
+            Destroy(other.gameObject);
+            handler.addScore(2);
+        }
     }
     
     
