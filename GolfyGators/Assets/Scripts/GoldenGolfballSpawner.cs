@@ -11,26 +11,26 @@ public class GoldenGolfballSpawner : MonoBehaviour
           private Transform spawnPoint; 
 
           //Timing variables
-          public float spawnRangeStart = 0.5f;
-          public float spawnRangeEnd = 100f;
+          private int spawnRangeStart = 1000; // 20 seconds
+          private int spawnRangeEnd = 6000; // 2 minutes
           private float timeToSpawn;
-          private float spawnTimer = 0f;
+          private int spawnTimer = 0;
           private bool spawned = false;
 
 
-          void Start() 
+          void Start()
           {
               rangeEnd = spawnPoints.Length - 1;
           }
           
-          void FixedUpdateG(){
+          void FixedUpdate(){
                 timeToSpawn = Random.Range(spawnRangeStart, spawnRangeEnd);
-                spawnTimer += 0.01f;
+                spawnTimer += 1;
                 if (spawnTimer >= timeToSpawn && spawned == false){
                       spawnGBall();
-                      spawnTimer =0f;
+                      spawnTimer = 0;
                       spawned = true;
-
+                      Debug.Log("golden ball if ran\n");
                 }
           }
 

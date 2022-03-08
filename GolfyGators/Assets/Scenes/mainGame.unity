@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a691d911d981548718ba05ac8bbdb767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldGolfballPrefab: {fileID: 6242019995318290613}
+  goldGolfballPrefab: {fileID: 2110546363}
   spawnPoints:
   - {fileID: 1988649543}
   - {fileID: 1397509470}
@@ -163,8 +163,6 @@ MonoBehaviour:
   - {fileID: 1416659926}
   - {fileID: 2012433079}
   - {fileID: 182887386}
-  spawnRangeStart: 0.5
-  spawnRangeEnd: 100
 --- !u!4 &35711121
 Transform:
   m_ObjectHideFlags: 0
@@ -177,7 +175,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138510700
 GameObject:
@@ -1233,6 +1231,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2110546362
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520632630971392475, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+      propertyPath: m_Name
+      value: GoldGolfball
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+--- !u!1 &2110546363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8520632630971392475, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
+  m_PrefabInstance: {fileID: 2110546362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2483493831723870459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1376,84 +1436,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4b9a8a320fc448c5b0e855288b0d1ae, type: 3}
---- !u!1001 &6242019995318290612
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 948513616975912028, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_Radius
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 948513616975912028, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_Offset.x
-      value: -1.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 948513616975912028, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6199504385906283659, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8520632630971392475, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_Name
-      value: GoldGolfball
-      objectReference: {fileID: 0}
-    - target: {fileID: 8520632630971392475, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
---- !u!1 &6242019995318290613 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8520632630971392475, guid: ed2c8a8706bca4ef6826e1e5941f80ff, type: 3}
-  m_PrefabInstance: {fileID: 6242019995318290612}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8208961412116958146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1471,7 +1453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6047239222299857716, guid: 4874c8b2774bd465a9a50eeeb193e0f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 11.86
       objectReference: {fileID: 0}
     - target: {fileID: 6047239222299857716, guid: 4874c8b2774bd465a9a50eeeb193e0f5, type: 3}
       propertyPath: m_LocalPosition.y
